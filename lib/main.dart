@@ -1,5 +1,6 @@
-import "package:flutter/material.dart";
-import "screens/profile_screen.dart"; // si está en otro archivo
+import 'package:flutter/material.dart';
+import "screens/User_Register.dart"; 
+
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ProfileScreen(),
+      home: UserRegister(),
     );
   }
 }
