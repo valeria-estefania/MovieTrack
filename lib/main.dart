@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import "screens/User_Register.dart"; 
-
+import 'screens/Front.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: UserRegister(),
+      home: UserRegister(), // HomeScreen() - UserRegister() 
     );
   }
 }
