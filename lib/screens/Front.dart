@@ -157,11 +157,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
 
   Widget _buildLogo() {
     return Text(
-      "Mi App",
+      "MOVIE TRACK",
       style: TextStyle(
         color: AppColors.coral,
-        fontSize: 32,
+        fontSize: 50,
         fontWeight: FontWeight.bold,
+        fontFamily: "OrlietPro",
       ),
     );
   }
@@ -173,6 +174,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
       style: TextStyle(
         color: AppColors.indigo.withOpacity(0.8),
         fontSize: 16,
+        fontFamily: "OrlietPro",
       ),
     );
   }
@@ -297,7 +299,7 @@ class _PrimaryButton extends StatelessWidget {
     return ElevatedButton.icon(
       onPressed: onTap,
       icon: Icon(icon, size: 20),
-      label: Text(label, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
+      label: Text(label, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600,fontFamily: "OrlietPro")),
       style: ElevatedButton.styleFrom(
         backgroundColor: AppColors.coral,
         minimumSize: const Size(double.infinity, 50),
@@ -317,7 +319,7 @@ class _SecondaryButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return OutlinedButton(
       onPressed: onTap,
-      child: Text(label, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600)),
+      child: Text(label, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600,fontFamily: "OrlietPro")),
       style: OutlinedButton.styleFrom(
         foregroundColor: AppColors.indigo,
         side: const BorderSide(color: AppColors.indigo, width: 1.5),

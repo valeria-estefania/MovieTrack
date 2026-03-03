@@ -102,7 +102,7 @@ class _UserRegisterState extends State<UserRegister> {
                 ),
                 child: Text(
                   "CREAR CUENTA",
-                  style: TextStyle(color: Color(0xFF6667AB)),
+                  style: TextStyle(color: Color(0xFFF5D5E0)),
                 ),
               ),
             ),
