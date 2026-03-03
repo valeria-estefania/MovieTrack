@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter_application_1/screens/User_Register.dart';
+import 'package:flutter_application_1/screens/user_login.dart';
 
 // ──────────────────────────────────────────────
 // PALETA DE COLORES
@@ -136,12 +138,12 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
                       _PrimaryButton(
                         label: 'Crear cuenta',
                         icon: Icons.person_add_alt_1_rounded,
-                        onTap: () {},
+                        onTap: () {Navigator.push(context,MaterialPageRoute(builder: (context)=>UserRegister()));},
                       ),
                       const SizedBox(height: 16),
                       _SecondaryButton(
                         label: 'Iniciar sesión',
-                        onTap: () {},
+                        onTap: () {Navigator.push(context,MaterialPageRoute(builder: (context)=>UserLogin()));},
                       ),
                     ],
                   ),
