@@ -101,7 +101,7 @@ class _UserLoginState extends State<UserLogin> {
               ),
               child: const Text(
                 "INICIAR SESIÓN",
-                style: TextStyle(color: Color(0xFF6667AB)),
+                style: TextStyle(color: Color.fromARGB(255, 255, 255, 255)),
               ),
             ),
           ],
